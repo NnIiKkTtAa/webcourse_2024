@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.items {
+  height: 400px;
+  background-color: black;
+  display: flex;
+  justify-content: center; /* 1 Задание */
+  align-items: center; /* 2 Задание */
+  flex-wrap: wrap; /* 3 Задание */
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+}
+
+.red { /* 4 Задание */
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.yellow { /* 5 Задание непонял как */
+  justify-content: end;
+  align-items: end;
+  background-color: yellow;
+}
+  
+  
