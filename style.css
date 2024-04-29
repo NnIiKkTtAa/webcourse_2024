@@ -22,16 +22,20 @@
   width: 200px;
   height: 200px;
   background-color: red;
+  align-self: start;
 }
 
 .green {
   background-color: green;
+  flex-shrink: 0;
+  align-self: center;
 }
 
-.yellow { /* 5 Задание непонял как */
+.yellow { /* 5 Задание */
   justify-content: end;
   align-items: end;
   background-color: yellow;
+  align-self: flex-end;
 }
   
   
