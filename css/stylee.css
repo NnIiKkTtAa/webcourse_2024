@@ -1,0 +1,64 @@
+*{
+    /* '*' задает стили всему веб-документу
+    в данном случае убираем все отступы, установленные браузером поумолчанию  */
+    margin: 0;
+    padding: 0;
+}
+
+.items{
+    height: 400px;
+    background-color: black;
+    display: grid;
+
+    /*grid-template-columns: 50px 80px 200px 100px; 1 Задание*/
+
+    /*grid-template-columns: 50px 80px auto 100px; 2 Задание*/
+
+    /*grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50% 50% 50%; 3 Задание*/
+
+    /*grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50% 50% 50%;
+    column-gap: 15px;
+    row-gap: 10px; 4 Задание*/
+
+    /*grid-template-columns: repeat(25, 25em);
+    grid-template-rows: 50% 50% 50% 50%;
+    column-gap: 15px;
+    row-gap: 10px; 5 Задание*/
+
+    /*grid-template-columns: 50% 50% minmax(120px, 25%) 50%;
+    grid-template-rows: 50% 50% 50% 50%;
+    column-gap: 15px;
+    row-gap: 10px; 6 Задание*/
+
+    grid-template-columns: 50% 50% 50% 50%;
+    grid-template-rows: 100px auto 180px;
+    column-gap: 15px;
+    row-gap: 10px; /*7 Задание*/
+
+  /*отступы между блоками*/ /*minmax(120px, 25%) - функция, которая  должна определять минимальную и максимальную величину блока*/
+   
+}
+
+.item{
+    /* width: 100px;
+    height: 100px; */
+}
+
+.red{
+    background-color: red;
+}
+
+.green{
+    background-color: green;
+}
+
+.yellow{
+    background-color: yellow;
+    
+}
+
+.blue{
+    background-color: blue;
+}
