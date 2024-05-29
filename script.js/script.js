@@ -1,6 +1,4 @@
-i = 10;
-
-while (i <= 20){
-    document.write(i + "<br>");
-    i *= 10;
+for (let i=10; i <= 20; i++ ){
+    document.write(i * i + "<br>");
 }
+    
