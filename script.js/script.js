@@ -5,25 +5,29 @@ function check_username_and_password() {
     var password = form.password.value;
     var symbols_in_password = password.length;
 
-    div_res.innerHTML = "";
+    var resultMessage = "";
 
     if (username == "") {
-        div_res.innerHTML = "имя не должно быть пустым";
+        resultMessage += "имя не должно быть пустым";
     }
 
     if (password == "") {
-        div_res.innerHTML += "<br>пароль не должен быть пустым";
+        resultMessage += "<br>пароль не должен быть пустым";
     } 
     
     if (symbols_in_password <= 6) {
-        div_res.innerHTML += "<br>пароль должен быть больше шести символов";
+        resultMessage += "<br>пароль должен быть больше шести символов";
     } 
     
     if (!hasUppercase(password)) {
-        div_res.innerHTML += "<br>пароль должен содержать одну заглавную букву";
+        resultMessage += "<br>пароль должен содержать одну заглавную букву";
     }
 
-    is_number_in_string(password);
+    if (resultMessage === "") {
+        resultMessage = "логин и пароль подходят";
+    }
+
+    div_res.innerHTML = resultMessage;
 }
 
 function hasUppercase(password) {
@@ -34,4 +38,8 @@ function hasUppercase(password) {
         }
     }
     return false;
+}
+
+function is_number_in_string(password) {
+    return /\d/.test(password);
 }
