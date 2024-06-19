@@ -180,3 +180,10 @@ width: 1440px;
     justify-content: center;
     margin-top: -15px;
 }
+
+#hamburger{
+    background-image: url(img/free-icon-menu-4254068\ \(1\).png);
+        width: 127px;
+        height: 127px;
+        margin-bottom: 19px;
+}

@@ -1,11 +1,16 @@
-var matrix = [[1,2,3],[4,5,6],[7,8,9]]
+var button = document.getElementById("hamburger");
+var a = document.getElementsByClassName("nav");
 
-for (var i = 0; i < matrix.length; i++){
-    console.log(matrix[i][i]);
+for (let i = 0; i < a.length; i++) {
+    a[i].style.display = "block";         
 }
 
-for (var i = 0; i < matrix.length; i++){
-   console.log(matrix[i][matrix.length - 1 - i]);
-}
-// задание вывод по диагонали
-
+button.addEventListener("click", function(){
+    for (let i = 0; i < a.length; i++) {
+        if (a[i].style.display == "block"){
+            a[i].style.display = "none";
+        }else{
+            a[i].style.display = "block";
+        }
+    }
+});
