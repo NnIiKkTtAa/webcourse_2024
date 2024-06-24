@@ -1,16 +1,14 @@
 var button = document.getElementById("hamburger");
-var a = document.getElementsByClassName("nav");
+var a = document.getElementById("menu_desktop");
 
-for (let i = 0; i < a.length; i++) {
-    a[i].style.display = "block";         
-}
+
 
 button.addEventListener("click", function(){
     for (let i = 0; i < a.length; i++) {
-        if (a[i].style.display == "block"){
-            a[i].style.display = "none";
-        }else{
+        if (a[i].style.display == "none"){
             a[i].style.display = "block";
+        }else{
+            a[i].style.display = "none";
         }
     }
 });

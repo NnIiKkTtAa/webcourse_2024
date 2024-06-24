@@ -187,3 +187,23 @@ width: 1440px;
         height: 127px;
         margin-bottom: 19px;
 }
+
+
+
+@media screen and (max-width: 1200px) {
+    #menu_desktop{
+        display: none;
+    }
+
+    #menu_mobile{
+        display: block;
+    }
+
+    #menu_mobile .nav > ul > li {
+        display: block;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+}
+    
