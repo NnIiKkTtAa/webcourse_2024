@@ -190,7 +190,16 @@ width: 1440px;
 
 
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px)  {
+    #menu_desktop{
+        display: block;
+    }
+
+    #menu_mobile{
+        display: none;
+    }
+}
+@media screen and (max-width: 1200px)  {
     #menu_desktop{
         display: none;
     }
@@ -198,12 +207,4 @@ width: 1440px;
     #menu_mobile{
         display: block;
     }
-
-    #menu_mobile .nav > ul > li {
-        display: block;
-        margin-left: 0;
-        margin-bottom: 10px;
-    }
-
-}
-    
+}    
