@@ -12,3 +12,16 @@ button.addEventListener("click", function(){
         }
     }
 });
+
+
+
+var button = document.getElementById("hamburger");
+var menuDesktop = document.getElementById("menu_desktop");
+
+button.addEventListener("click", function(){
+    if (menuDesktop.style.display === "none") {
+        menuDesktop.style.display = "block";
+    } else {
+        menuDesktop.style.display = "none";
+    }
+});
