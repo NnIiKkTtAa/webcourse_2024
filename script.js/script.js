@@ -13,15 +13,14 @@ button.addEventListener("click", function(){
     }
 });
 
-
-
 var button = document.getElementById("hamburger");
-var menuDesktop = document.getElementById("menu_desktop");
+var menuMobile = document.getElementById("menu_mobile");
 
 button.addEventListener("click", function(){
-    if (menuDesktop.style.display === "none") {
-        menuDesktop.style.display = "block";
+    if (menuMobile.style.display === "none") {
+        menuMobile.style.display = "block";
     } else {
-        menuDesktop.style.display = "none";
-    }
+        menuMobile.style.display = "none";
+    }
 });
+
